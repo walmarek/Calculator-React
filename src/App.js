@@ -2,10 +2,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className='caclulator'>
+    <div className='calculator'>
       <div className='output'>
         <div className='previous-operand'></div>
-        <div className='currend-operand'></div>
+        <div className='current-operand'></div>
       </div>
    <button className='span--two'>AC</button>
    <button>DEL</button>
