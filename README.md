@@ -16,5 +16,5 @@ This calculator has most usefull functions.
 ## [**Calculator - link**](https://walmarek.github.io/calculator-react/)
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/walmarek/calculator-react/blob/main/public/calculator-react.gif?raw=true">
 </p>
