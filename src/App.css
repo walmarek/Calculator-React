@@ -42,12 +42,12 @@
   word-break: break-all;
 }
 
-.previous-operand {
+.previous--operand {
 color: #aaa;
 font-size: 18px;
 }
 
-.current-operand {
+.current--operand {
 color: white;
 font-size: 28px;
 }
