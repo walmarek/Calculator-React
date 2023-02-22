@@ -94,6 +94,39 @@ const reducer = (state, { type, payload }) => {
   }
 };
 
+const evaluate = ({ currentOperand, previousOperand, operation }) => {
+  const prev = parseFloat(previousOperand);
+  const curr = parseFloat(currentOperand);
+  if (isNaN(prev) || isNaN(curr)) return "";
+  let computation = "";
+  // eslint-disable-next-line
+  switch (operation) {
+    case "+":
+      computation = prev + curr;
+      break;
+    case "-":
+      computation = prev - curr;
+      break;
+    case "*":
+      computation = prev * curr;
+      break;
+    case "/":
+      computation = prev / curr;
+      break;
+  }
+  return computation.toString();
+};
+
+const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
+  maximumFractionDigits: 0,
+});
+
+const formatOperand = (operand) => {
+  if (operand == null) return;
+  const [integer, decimal] = operand.split(".");
+  if (decimal == null) return INTEGER_FORMATTER.format(integer);
+  return `${INTEGER_FORMATTER.format(integer)}.${decimal}`;
+};
 
 
 function App() {
