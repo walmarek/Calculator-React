@@ -13,7 +13,7 @@ This calculator has most usefull functions.
 - BEM
 - Vite.js
 
-## [**Todo list-react - link**](https://walmarek.github.io/calculator-react/)
+## [**Calculator - link**](https://walmarek.github.io/calculator-react/)
 
 <p align="center">
   <img src="">
